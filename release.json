@@ -1,0 +1,26 @@
+{
+    ""release":[
+        {
+            "enable":false,
+            "repo":"mlemmlemmlem/tiai-jenkins",
+            "branch":"develop",
+            "commit":"dayla1dayso",
+            "tag":"v1.9.0.sprint.1990.28",
+            "message":"v1.9.0.sprint.1990.28",
+            "new_branch":"release/1.9.0"
+        }
+    ]
+},
+{
+    ""release":[
+        {
+            "enable":false,
+            "repo":"mlemmlemmlem/-ui",
+            "branch":"develop",
+            "commit":"dayla1dayso",
+            "tag":"v1.9.0.sprint.1990.28",
+            "message":"v1.9.0.sprint.1990.28",
+            "new_branch":"release/1.9.0"
+        }
+    ]
+}
