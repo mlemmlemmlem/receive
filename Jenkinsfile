@@ -10,3 +10,10 @@ println env.GIT_COMMIT
 println env.JOB_NAME
 println env.JOB_BASE_NAME
 }
+
+
+node {
+    withCheckout(scm) {
+         echo "GIT_COMMIT is ${env.GIT_COMMIT}"
+    }
+}
