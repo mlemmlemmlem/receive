@@ -14,7 +14,7 @@ println env.GIT_COMMIT
 println env.JOB_NAME
 println env.JOB_BASE_NAME
  stage("trigger"){
-  utils.triggerReleaseJob(repo, shortCommit, version)
+  utils.triggerReleaseJob(repo, branch, shortCommit, version)
  }
 }
 
