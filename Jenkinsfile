@@ -11,7 +11,9 @@ stage("checkout"){
 def shortCommit = sh(returnStdout: true, script: "git log -n 1 --pretty=format:'%h'").trim()
 println shortCommit
 println env.GIT_COMMIT
+println ("job name") 
 println env.JOB_NAME
+println ("job base name")
 println env.JOB_BASE_NAME
  stage("trigger"){
   utils.triggerReleaseJob(repo, branch, shortCommit, version)
