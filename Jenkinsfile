@@ -16,6 +16,8 @@ println env.JOB_NAME
 println ("job base name")
 println env.JOB_BASE_NAME
 println env.BRANCH_NAME
+def jobBaseName = "${env.JOB_NAME}".split('/').last()
+echo "Job Name (excl. path): ${jobBaseName}"
  stage("trigger"){
   utils.triggerReleaseJob(repo, branch, shortCommit, version)
  }
