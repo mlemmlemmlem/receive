@@ -16,8 +16,9 @@ println env.JOB_NAME
 println ("job base name")
 println env.JOB_BASE_NAME
 println env.BRANCH_NAME
-def jobBaseName = "${env.JOB_NAME}".split('/')
-echo "Job Name (excl. path): ${jobBaseName}"
+def listJobName = "${env.JOB_NAME}".split('/')
+def jobName = listJobName[0] + '/' + listJobName[0]
+echo "Job Name (excl. path): ${jobName}"
  stage("trigger"){
   utils.triggerReleaseJob(repo, branch, shortCommit, version)
  }
