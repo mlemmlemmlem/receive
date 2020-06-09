@@ -15,6 +15,7 @@ println ("job name")
 println env.JOB_NAME
 println ("job base name")
 println env.JOB_BASE_NAME
+println env.BRANCH_NAME
  stage("trigger"){
   utils.triggerReleaseJob(repo, branch, shortCommit, version)
  }
