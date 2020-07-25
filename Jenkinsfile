@@ -1,6 +1,7 @@
 #!/usr/bin/env groovy
 @Library('jenkins-pipeline')
 def utils = new com.acceleratedskillup.Util()
+utils.trigg = 'abcd' 
 def repo = 'mlemmlemmlem/siai-rily'
 def branch = 'master'
 def version = 'v.1.1.1'
