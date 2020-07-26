@@ -1,7 +1,7 @@
 #!/usr/bin/env groovy
 @Library('jenkins-pipeline')
 def utils = new com.acceleratedskillup.Util()
-utils.trigg = 'abcd' 
+utils.trigger = 'true' 
 def repo = 'mlemmlemmlem/siai-rily'
 def branch = 'master'
 def version = 'v.1.1.1'
@@ -23,6 +23,7 @@ def jobName = listJobName[0] + '/' + listJobName[1]
 echo "Job Name (excl. path): ${jobName}"
  stage("trigger"){
   utils.triggerReleaseJob(repo, branch, shortCommit, version)
+  println trigger
  }
 }
 
