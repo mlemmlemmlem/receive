@@ -24,7 +24,7 @@ def jobName = listJobName[0] + '/' + listJobName[1]
 echo "Job Name (excl. path): ${jobName}"
  stage("trigger"){
   println ("ab + ${utils.trigger}")
-  utils.triggerReleaseJob(repo, branch, shortCommit, version)
+  utils.triggerReleaseJob(repo, branch, shortCommit, version,trigger)
  }
 }
 
