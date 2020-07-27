@@ -5,8 +5,6 @@ utils.test='test'
 utils.repo = 'mlemmlemmle/siai-rily'
 utils.branch = 'master'
 def trigger = true
-def repo = 'mlemmlemmlem/siai-rily'
-def branch = 'master'
 def version = 'v.1.1.1'
 node("master"){
 stage("checkout"){
