@@ -2,7 +2,7 @@
 @Library('jenkins-pipeline')
 def utils = new com.acceleratedskillup.Util()
 utils.test='test'
-utils.repo = 'mlemmlemmlem/siai-rily'
+utils.repo = 'mlemmlemmle/siai-rily'
 utils.branch = 'master'
 def trigger = true
 def repo = 'mlemmlemmlem/siai-rily'
