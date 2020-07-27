@@ -20,10 +20,10 @@ println env.BRANCH_NAME
 println env.CHANGE_TARGET
 def listJobName = "${env.JOB_NAME}".split('/')
 def jobName = listJobName[0] + '/' + listJobName[1]
-println ("abc" + utils.trigger)
+println ("a + ${trigger}")
 echo "Job Name (excl. path): ${jobName}"
  stage("trigger"){
-  println ("abc" + utils.trigger)
+  println ("ab + ${trigger}")
   utils.triggerReleaseJob(repo, branch, shortCommit, version)
  }
 }
