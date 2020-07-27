@@ -2,6 +2,8 @@
 @Library('jenkins-pipeline')
 def utils = new com.acceleratedskillup.Util()
 utils.test='test'
+utils.repo = 'mlemmlemmlem/siai-rily'
+utils.branch = 'master'
 def trigger = true
 def repo = 'mlemmlemmlem/siai-rily'
 def branch = 'master'
@@ -28,4 +30,3 @@ echo "Job Name (excl. path): ${jobName}"
   utils.triggerReleaseJob(repo, branch, shortCommit, version, trigger)
  }
 }
-
