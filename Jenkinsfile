@@ -26,6 +26,6 @@ echo "Job Name (excl. path): ${jobName}"
  stage("trigger"){
   println ("ab + ${trigger}")
   //utils.triggerReleaseJob(repo, branch, shortCommit, version, trigger)
-  utils.abc
+  utils.abc()
  }
 }
