@@ -2,9 +2,9 @@
 @Library('jenkins-pipeline')
 def utils = new com.acceleratedskillup.Util()
 utils.test='test'
-utils.repo = 'mlemmlemmlem/siai-rily'
-utils.branch = 'master'
-utils.trigger = 'smoke'
+def repo = 'mlemmlemmlem/siai-rily'
+def branch = 'master'
+def trigger = 'smoke'
 def version = 'v.1.1.1'
 node("master"){
 stage("checkout"){
