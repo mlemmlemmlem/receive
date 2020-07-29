@@ -4,7 +4,7 @@ def utils = new com.acceleratedskillup.Util()
 utils.test='test'
 utils.repo = 'mlemmlemmlem/siai-rily'
 utils.branch = 'master'
-def trigger = true
+def utils.trigger = 'smoke'
 def version = 'v.1.1.1'
 node("master"){
 stage("checkout"){
